@@ -1,0 +1,302 @@
+/* =========================
+   Base Layout
+========================= */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f7fb;
+}
+
+.app {
+  max-width: 520px;
+  margin: 60px auto;
+  background: white;
+  padding: 24px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+h1 {
+  margin: 0 0 24px;
+  color: #1f2937;
+  font-size: 64px;
+  line-height: 1.05;
+}
+
+/* =========================
+   Search Section
+========================= */
+
+.search-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.search-box input {
+  flex: 1;
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 1px solid #d0d7de;
+  border-radius: 10px;
+  outline: none;
+  background: #f8fafc;
+  color: #1f2937;
+}
+
+.search-box input::placeholder {
+  color: #94a3b8;
+}
+
+.search-box input:focus {
+  border-color: #60a5fa;
+  background: #ffffff;
+}
+
+.search-box button {
+  padding: 12px 16px;
+  border: none;
+  border-radius: 10px;
+  background: #2563eb;
+  color: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.search-box button:hover {
+  opacity: 0.9;
+}
+
+/* =========================
+   Status Messages
+========================= */
+
+.loading-message {
+  color: #475569;
+  margin-top: 12px;
+}
+
+.error-message {
+  color: #dc2626;
+  margin-top: 12px;
+  font-weight: 500;
+}
+
+/* =========================
+   Current Weather Card
+========================= */
+
+.weather-card {
+  margin-top: 24px;
+  padding: 24px;
+  border-radius: 16px;
+  background: linear-gradient(180deg, #eff6ff 0%, #dbeafe 100%);
+  border: 1px solid #bfdbfe;
+  text-align: left;
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.weather-header h2 {
+  margin: 0;
+  color: #1e3a8a;
+  font-size: 24px;
+}
+
+.weather-description {
+  margin-top: 6px;
+  color: #475569;
+  text-transform: capitalize;
+  font-size: 16px;
+}
+
+/* White icon container improves contrast against the blue card background. */
+.weather-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 88px;
+  height: 88px;
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  flex-shrink: 0;
+}
+
+.weather-icon {
+  width: 72px;
+  height: 72px;
+}
+
+.temperature-section {
+  margin-bottom: 20px;
+}
+
+.temperature {
+  margin: 0;
+  font-size: 48px;
+  font-weight: bold;
+  color: #0f172a;
+}
+
+.feels-like {
+  margin-top: 6px;
+  color: #475569;
+}
+
+.weather-details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 12px;
+}
+
+.detail-box {
+  background: rgba(255, 255, 255, 0.78);
+  border-radius: 12px;
+  padding: 14px;
+  display: flex;
+  flex-direction: column;
+}
+
+.detail-label {
+  font-size: 13px;
+  color: #64748b;
+  margin-bottom: 6px;
+}
+
+.detail-value {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* =========================
+   Location Match Selection
+========================= */
+
+.matches-list {
+  margin-top: 20px;
+  text-align: left;
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 14px;
+  padding: 16px;
+}
+
+.matches-title {
+  margin: 0 0 12px;
+  color: #334155;
+  font-weight: 600;
+}
+
+.match-btn {
+  display: block;
+  width: 100%;
+  text-align: left;
+  background: #f8fafc;
+  color: #1f2937;
+  border: 1px solid #dbe4f0;
+  border-radius: 10px;
+  padding: 12px 14px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.match-btn:last-child {
+  margin-bottom: 0;
+}
+
+.match-btn:hover {
+  background: #eff6ff;
+  border-color: #93c5fd;
+}
+
+/* =========================
+   Forecast Section
+========================= */
+
+.forecast-section {
+  margin-top: 24px;
+  text-align: left;
+}
+
+.forecast-section h3 {
+  margin-bottom: 14px;
+  color: #1f2937;
+}
+
+/* Horizontal scrolling keeps all forecast cards on one row without awkward wrapping. */
+.forecast-list {
+  display: flex;
+  overflow-x: auto;
+  gap: 12px;
+  padding-bottom: 4px;
+}
+
+.forecast-card {
+  background: #ffffff;
+  border: 1px solid #dbe4f0;
+  border-radius: 14px;
+  padding: 14px 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(15, 23, 42, 0.04);
+  flex: 0 0 auto;
+  min-width: 110px;
+}
+
+.forecast-day {
+  margin: 0 0 8px;
+  font-weight: 600;
+  font-size: 14px;
+  color: #334155;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+}
+
+.forecast-temp {
+  margin: 8px 0 4px;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.forecast-desc {
+  margin: 8px 0 4px;
+  font-size: 12px;
+  color: #64748b;
+  text-transform: capitalize;
+}
+
+/* =========================
+   Responsive Layout
+========================= */
+
+@media (max-width: 600px) {
+  .app {
+    margin: 24px 16px;
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  .search-box {
+    flex-direction: column;
+  }
+
+  .search-box button {
+    width: 100%;
+  }
+}
