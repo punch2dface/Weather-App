@@ -2,7 +2,7 @@
 
 A responsive weather application built with React and Vite that allows users to search for cities, view current weather conditions, and browse a 5-day forecast. The app uses OpenWeather's Geocoding API to resolve duplicate city names and fetches weather data based on coordinates for more accurate results.
 
-![Main Weather View](./screenshots/main.png)
+![Main Weather View](/src/screenshots/main.png)
 
 ## Live Demo
 
@@ -33,10 +33,10 @@ Add your deployed link here after deployment.
 ## Screenshots
 
 ### Duplicate City Selection
-![Duplicate City Selection](.src/screenshots/location-select.png)
+![Duplicate City Selection](/src/screenshots/location.png)
 
 ### 5-Day Forecast
-![5-Day Forecast](.src/screenshots/forecast.png)
+![5-Day Forecast](/src/screenshots/forecast.png)
 
 ## What I Learned
 
