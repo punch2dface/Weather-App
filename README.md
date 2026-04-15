@@ -6,7 +6,7 @@ A responsive weather application built with React and Vite that allows users to 
 
 ## Live Demo
 
-Add your deployed link here after deployment.
+https://weather-app-eight-virid-44.vercel.app/
 
 ## Features
 
@@ -42,13 +42,13 @@ Add your deployed link here after deployment.
 
 ### This project helped me practice:
 
-React state management with useState
-Side effects and persistence with useEffect
-Fetching and handling API data
-Working with multiple related API endpoints
-Handling ambiguous search results with geocoding
-Persisting app state with localStorage
-Building a more polished and responsive UI
+- React state management with useState
+- Side effects and persistence with useEffect
+- Fetching and handling API data
+- Working with multiple related API endpoints
+- Handling ambiguous search results with geocoding
+- Persisting app state with localStorage
+- Building a more polished and responsive UI
 
 ## Challenges
 
@@ -58,16 +58,8 @@ Another challenge was converting 3-hour forecast data into a cleaner 5-day displ
 
 ## Future Improvements
 
-Add temperature unit toggle between Celsius and Fahrenheit
-Add recent search history
-Improve loading states for different API requests
-Add weather condition icons from a custom icon set
-Add better accessibility and keyboard navigation
-
-## Getting Started
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/punch2dface/Weather-App.git
-cd weather-app
+- Add temperature unit toggle between Celsius and Fahrenheit
+- Add recent search history
+- Improve loading states for different API requests
+- Add weather condition icons from a custom icon set
+- Add better accessibility and keyboard navigation
